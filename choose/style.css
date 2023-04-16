@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding:0;
+}
+
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  background: white;
+  overflow-x: hidden;
+}
+.img{
+  position: absolute;
+  max-width: 200px;
+  top: 0px;
+}
+header{
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(52, 52, 207);
+  box-shadow:0 0 1rem black ;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+ul{
+  display: flex;
+  margin: 23px;
+  text-decoration: none;
+}
+li{
+  color: white;
+  list-style-type: none;
+  cursor: pointer;
+  padding-left: 2rem;
+
+}
+li a {
+    padding: 10px 30px; 
+    margin:0;
+    text-decoration: none;
+    color:#FFF;
+    font-size: 18px;
+    margin-left: 5px;
+    display: inline-block;
+}
+li a:hover {
+    background:	#87CEFA;
+    color: #000; 
+    border-color:#87CEFA;
+    border: 0px solid #f00; 
+    text-decoration: none;
+    color:#FFF;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+.search-box{
+    position: absolute;
+    top: 20px;
+    left: 15%;
+    background: white;   
+    height: 40px;
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.search-text{
+  background: none;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  font-size: 12px;
+  transition: 0.4s;
+  width: 0;
+}
+.search-btn{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;  
+}
+.loupe-white{
+  display: none;
+  width: 20px;
+  height: 20px;
+}
+.loupe-blue{
+  width: 20px;
+  height: 20px;
+  padding-left: 20px;
+}
+.search-box:hover > .search-text{
+  width: 320px;
+  padding-left: 20px;
+}
+.search-box:hover > .search-btn{
+  background: #447ce7;
+  
+}
+.search-box:hover > .search-btn .loupe-blue{
+  display: none;
+}
+.search-box > .search-btn .loupe-white{
+  display: block;
+}
+::-webkit-input-placeholder{
+  font-size: 17px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #aeaeae;
+}
